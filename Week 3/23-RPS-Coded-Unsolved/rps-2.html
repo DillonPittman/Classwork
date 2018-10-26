@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  <div id="game">
+    <h1 id="userGuess">Player choice: </h1>
+    <br>
+    <h1 id="computerGuess">Computer choice: </h1>
+    <br>
+    <h1 id="wins">Wins: 0</h1>
+    <br>
+    <h1 id="losses">Losses: 0</h1>
+    <br>
+    <h1 id="ties">Ties: 0</h1>
+    <br>
+  </div>
+
+  <script type="text/javascript">
+    var wins = 0
+    var losses = 0
+    var ties = 0
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+      
+      // Determines which key was pressed.
+      var userGuess = event.key;
+
+      // Randomly chooses a choice from the options array. This is the Computer's guess.
+      var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+      // Alerts the key the user pressed (userGuess).
+      var userDisplay = document.getElementById("userGuess")
+      userDisplay.textContent = "Player Choice: " +userGuess
+
+      // Alerts the Computer's guess.
+      var computerDisplay = document.getElementById("computerGuess")
+      computerDisplay.textContent = "Computer Choice: " +computerGuess
+
+      
+    };
+    if (userGuess == "r" && computerGuess == "s"){
+            var wins = document.getElementById("wins")
+            wins.textContent = "Wins: " +wins++
+          }
+  </script>
+
+</body>
+
+</html>

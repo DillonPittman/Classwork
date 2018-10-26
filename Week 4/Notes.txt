@@ -1,0 +1,14 @@
+<div id="sampleDiv">What</div>
+
+<script>
+
+var sampleDiv = document.getElementById("sampleDiv")
+
+sampleDiv.textContent += "'sup dawg"
+
+var newElm = document.createElement("div")
+newElm.id = "newDiv"
+newElm.textContent = "Look, it's a new DIV!"
+console.log(newElm)
+
+</script>

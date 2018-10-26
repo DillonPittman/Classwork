@@ -1,0 +1,27 @@
+#fixed {
+    position: fixed;
+    height: 60px;
+    width: 100px;
+    background-color: brown
+}
+
+#relative {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    background-color: red;
+}
+
+#absolute {
+    position: absolute;
+    height: 60px;
+    width: 100px;
+    bottom: 10px;
+    right: 10px;
+    background-color: green;
+}
+
+.wrapper {
+    margin: auto;
+    width: 60%;
+}

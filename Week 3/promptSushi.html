@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    var eatSteak = confirm("Do you eat steak?")
+    if (eatSteak){
+        document.write("Here's steak dude.")
+    } else {
+        document.write("This is a steakhouse. You can leave.")
+    }
+    var age = prompt("How old are you?")
+    if (age>=21){
+        document.write(" Would you like a beer?")
+    } else if (21>age>12) {
+        document.write(" Can I bring you a soda?")
+    } else {
+        document.write(" Here's a kid's menu.")
+    }
+
+    // var sushiLike = confirm("Do you like sushi?")
+    // console.log("response to: Like sushi: "+sushiLike)
+    // var sushiChoice = prompt("What kind of sushi do you like?")
+    // console.log("what kind of sushi they like: "+sushiChoice)
+    // document.write("You said you like sushi "+sushiLike+" and that you like "+sushiChoice)
+
+</script>    
+</body>
+</html>
